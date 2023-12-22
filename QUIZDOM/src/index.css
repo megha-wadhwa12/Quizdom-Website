@@ -1,0 +1,521 @@
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato&display=swap");
+
+/* Global styles for the entire application */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive; /* Setting default font for the application */
+  font-family: "Lato", sans-serif; /* Overriding default font with Lato for better readability */
+  user-select: none;
+}
+
+/* Flex container utility class */
+.flex {
+  display: flex;
+}
+
+/* Logo styling */
+.logo {
+  width: 17vw;
+  margin-left: 3vw;
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Toggle switch styling */
+.toggle-switch > button {
+  /* display: flex; */
+  /* position: relative; */
+  margin-right: 8vw;
+  width: 5vw;
+  height: 5vh;
+  border-radius: 10vh;
+  background-color: black;
+  border: none;
+  outline: none;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+/* Stylish sphere styling */
+.sphere {
+  position: relative;
+  border-radius: 100%;
+  height: 5vh;
+  width: 2.5vw;
+  transition: left 0.5s;
+  cursor: pointer;
+
+}
+
+/* Styling for the left section of the home page */
+.home-main-left {
+  width: 50vw;
+  padding: 10vh 10vw;
+  flex-direction: column;
+}
+
+/* Styling for the text in the left section of the home page */
+.home-main-left-text-1 {
+  color: #c82390;
+  font-family: Lato;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 130%;
+}
+.home-main-left-text-2 {
+  color: #c82390;
+  font-family: Lato;
+  font-size: 1.7rem;
+  margin-top: 1vw;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+/* Styling for the "Start" button */
+.start {
+  width: 10vw;
+  height: 7vh;
+  margin: 5vh 0vw;
+  padding: 14px 16px;
+  border-radius: 1vh;
+  background: #d561ca;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+/* Styling for the right section of the home page */
+.home-main-right {
+  width: 30vw;
+  height: 80vh;
+  margin-left: 25vh;
+  border: none;
+}
+
+/* Styling for the page number indicator */
+.pages {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #d561ca;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+/* Styling for the page number itself */
+.pageNo {
+  color: #61b2d5;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Stylish container for the quiz question with a pink background */
+.ques-pink {
+  width: 80%;
+  height: 12vh;
+  margin-left: 10%;
+  padding: 1.5vh 0;
+  border-radius: 7px;
+}
+
+/* Container for the quiz question with a white background */
+.ques-white {
+  background-color: white;
+  width: 95%;
+  height: 9vh;
+  margin: 0 2.5%;
+  color: #61b2d5;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2.5vh;
+  border-radius: 7px;
+}
+
+/* Styling for the options container */
+.options {
+  margin: 2% 10%;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for individual options */
+.options > div {
+  width: 30vw;
+  height: 8vh;
+  border-radius: 7px;
+  background: #d561ca;
+  margin-top: 3%;
+  padding: 2vh;
+  cursor: pointer;
+
+}
+
+/* Container for options and accompanying image */
+.options-image {
+  width: 100vw;
+  gap: 7vw;
+}
+
+/* Styling for the quiz image */
+.options-image > img {
+  width: 26vw;
+  margin: 2%;
+}
+
+/* Styling for buttons in the quiz section */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  align-items: center;
+}
+
+/* Styling for individual buttons */
+.buttons > button {
+  text-align: center;
+  padding: 2vh 4vh;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/* Styling for the highlight button */
+.highlight {
+  background-color: #61b2d5;
+}
+
+/* Styling for the remove button */
+.remove {
+  background-color: #d561ca;
+}
+
+/* Styling for the result section */
+.result-main {
+  justify-content: space-around;
+}
+
+/* Styling for the result image on the right */
+.result-right > img {
+  width: 28vw;
+  height: 80vh;
+}
+
+/* Styling for the left section of the result page */
+.result-left {
+  flex-direction: column;
+  gap: 6vh;
+  text-align: center;
+  margin-top: 5vh;
+  align-items: center;
+}
+
+/* Styling for the winning message */
+.winning-message {
+  color: rgba(255, 0, 168, 0.9);
+  text-align: center;
+  font-family: Lato;
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 139%;
+  width: 40vw;
+}
+
+/* Styling for the score percentage */
+.score-percentage {
+  color: #61b2d5;
+  font-family: Lato;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 139%;
+}
+
+/* Styling for the "attempted" result message */
+.result-attempted {
+  color: #d561ca;
+}
+
+/* Styling for the home button */
+.home-button {
+  text-align: center;
+  padding: 2vh 4vh;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 10vw;
+  cursor: pointer;
+
+}
+@media screen and (max-width: 768px) {
+
+  .toggle-switch>button{
+    width: 5.5vw;
+  }
+  .sphere{
+    width: 5vh;
+  }
+  .home-main-right{
+    width: 40vw;
+    margin-left: 2vw;
+  }
+  .start{
+    width: 15vw;
+    padding: 1vh 2vh;
+  }
+  .pages{
+    margin: 1vh 0;
+  }
+  .options-image{
+    margin: 5vh 0;
+    gap: 0vh;
+  }
+  .options>div{
+    margin: 1vh 0;
+    width: 40vw;
+  }
+  .winning-message{
+    margin-top: 5vh;
+    font-size: 2rem;
+  }
+  .result-right>img{
+    width: 34vw;
+  }
+  .score-percentage{
+    font-size: 2rem;
+  }
+  
+}
+@media screen and (max-width: 426px) {
+
+  .toggle-switch>button{
+    width: 10vw;
+  }
+  .sphere{
+    width: 6vw;
+  }
+  .logo{
+    width: 30vw;
+  }
+  .home-main-right{
+    width: 40vw;
+    height: 50vh;
+    margin-left: 2vw;
+  }
+  .home-main-left{
+    padding: 5vw;
+    width: 53vw;
+    height: 90vh;
+  }
+  .home-main-left-text-1{
+    font-size: 2rem;
+    width: 40vw;
+    height: 50vh;
+    margin-top: 10vh;
+  }
+  .home-main-left-text-2 {
+    width: 90vw;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .start{
+    width: 25vw;
+    padding: 1vh 2vh;
+    align-self: center;
+    margin-left: 42vh;
+  }
+  .ques-pink{
+    margin-left: 5% ;
+    width: 90%;
+  }
+  .ques-white{
+    padding: 1vh;
+  }
+  .options{
+    margin: 1.5vh 4.2vh;
+    font-size: 0.8rem;
+  }
+  .options>div{
+    width: 46vw;
+    padding: 1.2vh;
+  }
+  .options-image{
+    gap: 0vw;
+  }
+  .options-image>img{
+    width: 37vw;
+  }
+  .result-left{
+    width: 50vw;
+    height: 80vh;
+    margin-top: 1vh;
+  }
+  .winning-message{
+    font-size: 1.6rem;
+  }
+  .score-percentage{
+    font-size: 1.4rem;
+  }
+  .result-attempted{
+    font-size: 1.2rem;
+  }
+  .result-right>img{
+    margin-top: 1vh;
+    width: 45vw;
+    height: 70vh;
+  }
+  .home-button{
+    width: 18vw;
+    margin: 0 0 0 50vw;
+
+  }
+}
+@media screen and (max-width: 376px) {
+
+  .toggle-switch>button{
+    width: 12vw;
+  }
+  .logo{
+    width: 34vw;
+  }
+  .home-main-right{
+    width: 42vw;
+    height: 50vh;
+    margin-left: 1vw;
+  }
+  .home-main-left{
+    padding: 5vw;
+    width: 53vw;
+    height: 87vh;
+  }
+  .home-main-left-text-1{
+    font-size: 1.7rem;
+    width: 40vw;
+    height: 50vh;
+    margin-top: 10vh;
+  }
+  .home-main-left-text-2 {
+    width: 90vw;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .start{
+    width: 30vw;
+    padding: 1.5vh 2vh;
+    align-self: center;
+    margin-left: 41vw;
+  }
+  .result-left{
+    width: 50vw;
+  }
+  .winning-message{
+    font-size: 1.6rem;
+  }
+  .score-percentage{
+    font-size: 1.1rem;
+  }
+  .result-attempted{
+    font-size: 1.1rem;
+  }
+  .result-right>img{
+    width: 45vw;
+    height: 65vh;
+  }
+  .home-button{
+    width: 20vw;
+    margin: 0 0 0 50vw;
+
+  }
+}
+@media screen and (max-width: 321px) {
+
+  .toggle-switch>button{
+    width: 14vw;
+  }
+  .sphere{
+    width: 7vw;
+  }
+  .logo{
+    width: 34vw;
+  }
+  .home-main-right{
+    width: 43vw;
+    height: 50vh;
+    margin-left: 1vw;
+  }
+  .home-main-left{
+    padding: 5vw;
+    width: 50vw;
+    height: 83vh;
+  }
+  .home-main-left-text-1{
+    font-size: 1.5rem;
+    width: 40vw;
+    height: 50vh;
+    margin-top: 10vh;
+  }
+  .home-main-left-text-2 {
+    width: 90vw;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .start{
+    width: 35vw;
+    padding: 1.5vh 2.5vh;
+    align-self: center;
+    margin-left: 41vw;
+  }
+  .options{
+    font-size: 0.7rem;
+    margin: 2vh 2vh 2vh 4vh;
+  }
+  .ques-white{
+    font-size: 0.9rem;
+    padding: 1vh;
+  }
+  .winning-message{
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .score-percentage{
+    font-size: 0.9rem;
+  }
+  .result-attempted{
+    font-size: 1rem;
+  }
+  .result-right>img{
+    width: 45vw;
+    height: 60vh;
+  }
+  .home-button{
+    width: 25vw;
+    margin: 6vh 0 0 50vw;
+  }
+  .result-left{
+    gap: 4vh;
+    width: 50vw;
+  }
+}
+
+/* fmnje{
+  color: #c82390;
+} */
